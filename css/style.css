@@ -267,6 +267,7 @@ main {
 
 .btn:hover {
     background-color: #555;
+    cursor: pointer;
 }
 
 .menu {
