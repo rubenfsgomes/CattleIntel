@@ -169,6 +169,10 @@ nav li:hover {
     transition: 0.3s;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav a {
     color: #000000;
     text-decoration: none;
