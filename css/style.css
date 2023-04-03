@@ -167,6 +167,7 @@ nav li:hover {
     background-color: rgb(231, 227, 227);
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 2rem
 }
 
 a {
