@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cattle Intel</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -60,11 +61,11 @@
             <h2>Contact Us</h2>
             <form>
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" placeholder="John Doe">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" placeholder="John_doe@gmail.com">
                 <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" ></textarea>
                 <button type="submit" class="btn">Submit</button>
             </form>
             <!-- <form class="card_form">
@@ -87,8 +88,17 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
-    <div id=bottomMenu>You read this article. Maybe read the other stuff I'm going to put here.</p>
+    <div class="popup-container" id="popup-container">
+        <button id="close">X</button>
+        <h3>Follow us on social media!</h3>
+        <p>Stay up-to-date with our latest news and updates by following us on social media:</p>
+        <div class="follow-icons">
+          <a href="#"><img src="./assets/images/fb.png"></a>
+          <a href="#"><img class="insta" src="./assets/images/in.png"></a>
+          <a href="#"><img src="./assets/images/tw.png"></a>
+        </div>
     </div>
+      
 <script src="js/script.js"></script>
 
 </body>

@@ -18,12 +18,15 @@ body {
     line-height: 1.6;
     position: relative;
     font-family: sans-serif;
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
-    overflow: -moz-scrollbars-none; /* For Firefox */
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+    overflow: -moz-scrollbars-none;
+    /* For Firefox */
 }
 
-.lines{
+.lines {
     position: absolute;
     top: 0;
     left: 0;
@@ -33,10 +36,9 @@ body {
     width: 90vw;
     z-index: -1;
 }
-  
-  
-.line
-{
+
+
+.line {
     position: absolute;
     width: 1px;
     height: 100%;
@@ -60,38 +62,35 @@ body {
     animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
 }
 
-.line:nth-child(1)
-{
+.line:nth-child(1) {
     margin-left: -25%
 }
 
-.line:nth-child(1)::after{
+.line:nth-child(1)::after {
     animation-delay: 2s
 }
 
-.line:nth-child(3){
+.line:nth-child(3) {
     margin-left: 25%
 }
 
-.line:nth-child(3)::after{
+.line:nth-child(3)::after {
     animation-delay: 2.5s
-} 
-    
-@keyframes drop
-{
-    0%{
+}
+
+@keyframes drop {
+    0% {
         top: -50%;
     }
-    
-    100%
-    {
+
+    100% {
         top: 110%;
     }
 }
 
 
-html, body
-{
+html,
+body {
     height: 100%;
 }
 
@@ -195,9 +194,9 @@ main {
     border-radius: 1rem;
     animation-name: text-focus-in;
     animation-duration: 1s;
-    -webkit-box-shadow: 2px 2px 6px 0px rgba(22,18,255,1);
-    -moz-box-shadow: 2px 2px 6px 0px rgba(22,18,255,1);
-    box-shadow: 2px 2px 6px 0px rgba(22,18,255,1);
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
+    box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
 }
 
 /* ----------------------------------------------
@@ -279,9 +278,9 @@ main {
     background-color: whitesmoke;
     padding: 2rem;
     border-radius: 1rem;
-    -webkit-box-shadow: 2px 2px 6px 0px rgba(22,18,255,1);
-    -moz-box-shadow: 2px 2px 6px 0px rgba(22,18,255,1);
-    box-shadow: 2px 2px 6px 0px rgba(22,18,255,1);
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
+    box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
 }
 
 .menu h2 {
@@ -350,9 +349,9 @@ main {
     background-color: whitesmoke;
     padding: 2rem;
     border-radius: 1rem;
-    -webkit-box-shadow: 2px 2px 6px 0px rgba(22,18,255,1);
-    -moz-box-shadow: 2px 2px 6px 0px rgba(22,18,255,1);
-    box-shadow: 2px 2px 6px 0px rgba(22,18,255,1);
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
+    box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
 }
 
 .about h2 {
@@ -372,9 +371,9 @@ main {
     background-color: whitesmoke;
     border-radius: 1rem;
     padding: 2rem;
-    -webkit-box-shadow: 2px 2px 6px 0px rgba(22,18,255,1);
-    -moz-box-shadow: 2px 2px 6px 0px rgba(22,18,255,1);
-    box-shadow: 2px 2px 6px 0px rgba(22,18,255,1);
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
+    box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
 }
 
 .contact h2 {
@@ -395,12 +394,19 @@ main {
 
 .contact input,
 .contact textarea {
-    padding: 0.5rem;
-    border-style: groove;
-    max-width: 70vw;
-    border-radius: 5px;
-    margin-bottom: 1rem;
     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.contact input,
+.contact textarea:focus {
+    border: 3px solid #555;
 }
 
 .contact button {
@@ -421,8 +427,10 @@ main {
 #bottomMenu {
     display: none;
     position: fixed;
-    left: 0; bottom: 0;
-    width: 100%; height: 60px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
     border-top: 1px solid #000;
     background: #fff;
     z-index: 1;
@@ -455,14 +463,14 @@ footer {
 
 @media only screen and (max-width: 600px) {
     header h1 {
-      display: none;
+        display: none;
     }
 
     .top-nav {
         display: flex;
         justify-content: space-between;
     }
-      
+
     .nav-items {
         display: flex;
         justify-content: space-between;
@@ -471,12 +479,12 @@ footer {
         padding: 0;
         margin: 0;
     }
-    
+
     .nav-items li {
         flex-grow: 1;
         text-align: center;
     }
-    
+
     .nav-items li a {
         display: block;
         padding: 1rem;
@@ -484,5 +492,88 @@ footer {
         color: #333;
         font-weight: bold;
     }
-      
-  }
+
+}
+
+/* Popup styles */
+.popup-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    z-index: 999;
+}
+
+.popup-container.show {
+    animation: fadeIn 0.5s;
+    display: block;
+}
+
+.popup-container h3 {
+    margin-top: 0;
+}
+
+.popup-container p {
+    margin-bottom: 10px;
+}
+
+.popup-container .follow-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-container .follow-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.popup-container .follow-icons a i {
+    transition: transform 0.2s;
+}
+
+.popup-container .follow-icons a:hover i {
+    transform: scale(1.2);
+}
+
+#popup-container #close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    border-style: none;
+    cursor: pointer;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+}
+
+.follow-icons a img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.insta{
+    max-width: 1.8rem;
+    max-height: 1.8rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
