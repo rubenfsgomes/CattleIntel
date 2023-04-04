@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     display: table;
@@ -355,18 +355,19 @@ main {
     margin-bottom: 1rem;
 }
 
-
 .card h2 {
     margin-bottom: 1rem;
 }
 
 .work-title {
     font-weight: normal;
+    margin-bottom: 0.5rem;
 }
 
 .work img {
     object-fit: cover;
     width: 100%;
+    border-radius: 0.5rem;
 }
 
 .hero image {
