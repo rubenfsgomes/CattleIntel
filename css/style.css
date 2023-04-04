@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     display: table;
@@ -17,7 +17,6 @@ body {
     color: #000;
     line-height: 1.6;
     position: relative;
-    font-family: sans-serif;
     scrollbar-width: none;
     /* For Firefox */
     -ms-overflow-style: none;
@@ -153,10 +152,12 @@ body {
     /* Rounded corners */
     font-size: 18px;
     /* Increase font size */
+    animation: fadeIn 0.3s;
 }
 
 #myBtn:hover {
-    background-color: rgb(45, 41, 252);;
+    background-color: rgb(45, 41, 252);
+    ;
     /* Add a dark-grey background on hover */
 }
 
@@ -347,6 +348,26 @@ main {
     }
 }
 
+.work {
+    background-color: rgb(223, 222, 222);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.card h2 {
+    margin-bottom: 1rem;
+}
+
+.work-title {
+    font-weight: normal;
+}
+
+.work img {
+    object-fit: cover;
+    width: 100%;
+}
 
 .hero image {
     width: auto;
@@ -713,47 +734,55 @@ footer {
 }
 
 #cube-container {
-  box-sizing: border-box;
-  transform-style: preserve-3d;
-  margin-top: 12rem;
-  left: 50%;
-  position: relative;
-  width: 250px;
-  height: 250px;
-  transition: 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    margin-top: 12rem;
+    left: 50%;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    transition: 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: translate(-50%, -50%);
 }
+
 #cube-container .face {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  border: 2px solid #ed3403;
-  background: #ed340370;
-  box-shadow: 0px 0px 150px #ed3403;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border: 2px solid #ed3403;
+    background: #ed340370;
+    box-shadow: 0px 0px 150px #ed3403;
 }
+
 #cube-container .face.top {
-  transform: rotateX(90deg);
-  margin-top: -50%;
+    transform: rotateX(90deg);
+    margin-top: -50%;
 }
+
 #cube-container .face.right {
-  transform: rotateY(90deg);
-  margin-left: 50%;
+    transform: rotateY(90deg);
+    margin-left: 50%;
 }
+
 #cube-container .face.left {
-  transform: rotateY(-90deg);
-  margin-left: -50%;
+    transform: rotateY(-90deg);
+    margin-left: -50%;
 }
+
 #cube-container .face.bottom {
-  transform: rotateX(90deg);
-  margin-top: 50%;
+    transform: rotateX(90deg);
+    margin-top: 50%;
 }
+
 #cube-container .face.back {
-  transform: translateZ(125px);
+    transform: translateZ(125px);
 }
+
 #cube-container .face.front {
-  transform: translateZ(-125px);
+    transform: translateZ(-125px);
 }
+
 #cube-container:hover {
-  transform: rotateX(-25deg) rotateY(-40deg) translate(-50%, -50%);
-  transition: 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: rotateX(-25deg) rotateY(-40deg) translate(-50%, -50%);
+    transition: 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
