@@ -30,78 +30,94 @@
                 <h1>CattleIntel</h1>
             </header>
         </div>
-        <section class="menu lazy-load" id="menu">
-            <h2>Our Team</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <a href="https://github.com/rubenfsgomes">
-                        <img src="assets/images/pi.jpg" alt="ruben_gomes">
-                        <h3>Rúben Gomes</h3>
-                        <p>A Computer Systems Engineering student.</p>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="https://github.com/IAMTorres">
-                        <img src="coffee2.jpg" alt="goncalo_torres">
-                        <h3>Gonçalo Torres</h3>
-                        <p>A Computer Systems Engineering student.</p>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="https://github.com/joaofurtado8">
-                        <img src="coffee3.jpg" alt="joao_furtado">
-                        <h3>João Furtado</h3>
-                        <p>A Computer Systems Engineering student.</p>
-                    </a>
+        <div class="row">
+            <div class="left-column">
+                <section class="menu lazy-load" id="menu">
+                    <h2>Our Team</h2>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <a href="https://github.com/rubenfsgomes">
+                                <img src="assets/images/pi.jpg" alt="ruben_gomes">
+                                <h3>Rúben Gomes</h3>
+                                <p>A Computer Systems Engineering student.</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="https://github.com/IAMTorres">
+                                <img src="coffee2.jpg" alt="goncalo_torres">
+                                <h3>Gonçalo Torres</h3>
+                                <p>A Computer Systems Engineering student.</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="https://github.com/joaofurtado8">
+                                <img src="coffee3.jpg" alt="joao_furtado">
+                                <h3>João Furtado</h3>
+                                <p>A Computer Systems Engineering student.</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="about lazy-load" id="about">
+                    <h2>About Us</h2>
+                    <p>We are a team of young Engineering students, eager to develop a project that will change the cattle industry forever!</p>
+                    <h3>Scope</h3>
+                    <p>This project was developed within the scope of the Link Me Up Program for 2023.</p>
+                </section>
+                <section class="contact laz" id="contact">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="John_doe@gmail.com">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" ></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <!-- <form class="card_form">
+                        <div class="input">
+                            <input type="text" class="input_field" required />
+                            <label class="input_label">Full name</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" class="input_field" required />
+                            <label class="input_label">Email</label>
+                        </div>
+                    </form> -->
+                </section>
+            </div>
+            <div class="right-column">
+                <div class="card">
+                    <h2>Follow us on social media!</h2>
+                    <p>Stay up-to-date with our latest news and updates by following us on social media:</p>
+                    <div class="follow-icons">
+                        <a href="#"><img src="./assets/images/fb.png"></a>
+                        <a href="#"><img class="insta" src="./assets/images/in.png"></a>
+                        <a href="#"><img src="./assets/images/tw.png"></a>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="about lazy-load" id="about">
-            <h2>About Us</h2>
-            <p>We are a team of young Engineering students, eager to develop a project that will change the cattle industry forever!</p>
-            <h3>Scope</h3>
-            <p>This project was developed within the scope of the Link Me Up Program for 2023.</p>
-            <a href="#" class="btn">Learn More</a>
-        </section>
-        <section class="contact laz" id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="John Doe">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="John_doe@gmail.com">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" ></textarea>
-                <button type="submit" class="btn">Submit</button>
-            </form>
-            <!-- <form class="card_form">
-                <div class="input">
-                    <input type="text" class="input_field" required />
-                    <label class="input_label">Full name</label>
-                </div>
-                <div class="input">
-                    <input type="text" class="input_field" required />
-                    <label class="input_label">Email</label>
-                </div>
-            </form> -->
-        </section>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2023 CattleIntel</p>
-    </footer>
-    <div class="lines">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
-    <div class="popup-container" id="popup-container">
-        <button id="close">✖️</button>
-        <h3>Follow us on social media!</h3>
-        <p>Stay up-to-date with our latest news and updates by following us on social media:</p>
-        <div class="follow-icons">
-          <a href="#"><img src="./assets/images/fb.png"></a>
-          <a href="#"><img class="insta" src="./assets/images/in.png"></a>
-          <a href="#"><img src="./assets/images/tw.png"></a>
+    <div>
+        <footer>
+            <p>&copy; 2023 CattleIntel</p>
+        </footer>
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="popup-container" id="popup-container">
+            <button id="close">✖️</button>
+            <h3>Follow us on social media!</h3>
+            <p>Stay up-to-date with our latest news and updates by following us on social media:</p>
+            <div class="follow-icons">
+            <a href="#"><img src="./assets/images/fb.png"></a>
+            <a href="#"><img class="insta" src="./assets/images/in.png"></a>
+            <a href="#"><img src="./assets/images/tw.png"></a>
+            </div>
         </div>
     </div>
       

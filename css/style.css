@@ -26,6 +26,33 @@ body {
     /* For Firefox */
 }
 
+.left-column {
+    float: left;
+    width: 75%;
+}
+
+.right-column {
+    float: left;
+    width: 25%;
+    padding-left: 2rem;
+}
+
+.card {
+    padding: 30px;
+    background-color: whitesmoke;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
+    box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .lines {
     position: absolute;
     top: 0;
@@ -341,7 +368,10 @@ main {
     border-bottom: solid blue;
 }
 
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
     color: inherit;
 }
 
@@ -570,6 +600,10 @@ footer {
     justify-content: center;
 }
 
+.follow-icons {
+    margin-top: 1rem;
+}
+
 .popup-container .follow-icons a {
     color: #fff;
     font-size: 1.5rem;
@@ -601,13 +635,14 @@ footer {
 }
 
 .follow-icons a img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.1rem;
+    height: 2.1rem;
 }
 
-.insta{
-    max-width: 1.8rem;
-    max-height: 1.8rem;
+.insta {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+    margin-bottom: 0.25rem;
 }
 
 /* Animations */
