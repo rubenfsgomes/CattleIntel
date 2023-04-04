@@ -148,7 +148,8 @@ body {
     /* Add a mouse pointer on hover */
     padding: 10px;
     /* Some padding */
-    border-radius: 10px;
+    border-radius: 50%;
+    align-items: center;
     /* Rounded corners */
     font-size: 18px;
     /* Increase font size */
