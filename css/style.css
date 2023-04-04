@@ -341,6 +341,10 @@ main {
     border-bottom: solid blue;
 }
 
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
 .menu-item a {
     text-decoration: none;
 }
