@@ -1,6 +1,7 @@
+// When user gets close to end of Page popup social media
 window.addEventListener("scroll", function() {
     // Check if user has reached the end of the page
-    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight-1) {
+    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight-300) {
       // Show the pop-up
       var popup = document.getElementById("popup-container");
       popup.classList.add("show");
@@ -26,7 +27,7 @@ let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
