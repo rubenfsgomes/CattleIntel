@@ -67,7 +67,8 @@ body {
 
 .fa-circle-chevron-down:hover {
     cursor: pointer;
-    background-color: rgb(230, 229, 229);
+    background-color: rgb(238, 237, 237);
+    transition: 0.3s;
 }
 
 .card {
@@ -179,9 +180,9 @@ body {
     /* Text color */
     cursor: pointer;
     /* Add a mouse pointer on hover */
-    padding: 10px;
+    padding: 0.25rem;
     /* Some padding */
-    border-radius: 50%;
+    border-radius: 1rem;
     align-items: center;
     border: 3px solid #cccccc;
     /* Rounded corners */
@@ -192,7 +193,8 @@ body {
 
 #myBtn:hover {
     cursor: pointer;
-    background-color: rgb(230, 229, 229);
+    background-color: rgb(238, 237, 237);
+    transition: 0.3s;
     /* Add a dark-grey background on hover */
 }
 
@@ -202,7 +204,7 @@ header {
     margin: 2rem auto;
     align-items: center;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: rgb(223, 222, 222);
     color: #000000;
     margin-top: 0;
     animation-name: slide-in-top;
@@ -272,7 +274,7 @@ nav li {
 }
 
 nav li:hover {
-    background-color: rgb(231, 227, 227);
+    background-color: rgb(238, 237, 237);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -392,11 +394,12 @@ main {
 }
 
 .work:hover {
-    background-color: rgb(230, 229, 229);
+    background-color: rgb(238, 237, 237);
     padding: 1rem;
     border: 3px solid #cccccc;
     border-radius: 1rem;
     margin-bottom: 1rem;
+    transition: 0.3s;
 }
 
 .card h2 {
@@ -408,7 +411,7 @@ main {
     margin-bottom: 0.5rem;
 }
 
-.work img {
+.proj-img {
     object-fit: cover;
     width: 100%;
     border-radius: 0.5rem;
@@ -477,6 +480,7 @@ main {
     border-radius: 1rem;
     text-align: left;
     border-bottom: solid blue;
+    background-color: rgb(223, 222, 222);
 }
 
 a,
@@ -495,7 +499,7 @@ a:active {
 }
 
 .menu-item:hover {
-    background-color: rgb(226, 223, 223);
+    background-color: rgb(238, 237, 237);
     cursor: pointer;
     transition: 0.3s;
 }
