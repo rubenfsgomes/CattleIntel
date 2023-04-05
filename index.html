@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cattle Intel</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/2faaf9ac84.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -70,13 +69,17 @@
                     </div>
                 </section>
                 <section class="about lazy-load" id="about">
-                    <p>Hover the cursor on The Cube</p>
+                    <p>About us</p>
+                    <p class="hidden-text">Hello</p>
                     <div id='cube-container'>
                         <div class="face top"></div>
                         <div class="face right"></div>
                         <div class="face bottom"></div>
                         <div class="face left"></div>
-                        <div class="face back">Hello</div>
+                        <div class="face back"> 
+                            <p class="face-text">Hover over me,</p>
+                            <p>and get to know us.</p>
+                        </div>
                         <div class="face front"></div>
                     </div>
                 </section>
@@ -89,7 +92,7 @@
                         <input type="email" id="email" name="email" placeholder="John_doe@gmail.com">
                         <label for="message">Message</label>
                         <textarea id="message" name="message"></textarea>
-                        <button type="submit" class="btn">Submit</button>
+                        <button type="submit" class="btn_sub">Submit</button>
                     </form>
                     <!-- <form class="card_form">
                         <div class="input">
@@ -127,6 +130,7 @@
                             <img class="ml-img" src="assets/images/ship.jpeg" alt="machine_learning">
                         </div>
                     </a>
+                    <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>
                 </div>
             </div>
         </div>
@@ -150,7 +154,7 @@
                 <a href="#"><img src="./assets/images/tw.png"></a>
             </div>
         </div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-sharp fa-solid fa-circle-chevron-up"></i></button>
     </div>
 
     <script src="js/script.js"></script>

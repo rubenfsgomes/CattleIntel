@@ -36,6 +36,40 @@ body {
     padding-left: 2rem;
 }
 
+.fa-light {
+    color: blue;
+}
+
+.fa-sharp {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px ;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 3px solid #cccccc;
+    background-color: rgb(223, 222, 222);
+    color: blue;
+}
+
+.fa-circle-chevron-up {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px ;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: rgb(223, 222, 222);
+    color: blue;
+}
+
+.fa-circle-chevron-down:hover {
+    cursor: pointer;
+    background-color: rgb(230, 229, 229);
+}
+
 .card {
     padding: 30px;
     background-color: whitesmoke;
@@ -139,7 +173,7 @@ body {
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: rgba(22, 18, 255, 1);
+    background-color: #dfdede;
     /* Set a background color */
     color: white;
     /* Text color */
@@ -149,6 +183,7 @@ body {
     /* Some padding */
     border-radius: 50%;
     align-items: center;
+    border: 3px solid #cccccc;
     /* Rounded corners */
     font-size: 18px;
     /* Increase font size */
@@ -156,8 +191,8 @@ body {
 }
 
 #myBtn:hover {
-    background-color: rgb(45, 41, 252);
-    ;
+    cursor: pointer;
+    background-color: rgb(230, 229, 229);
     /* Add a dark-grey background on hover */
 }
 
@@ -351,6 +386,15 @@ main {
 .work {
     background-color: rgb(223, 222, 222);
     padding: 1rem;
+    border: 3px solid #cccccc;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.work:hover {
+    background-color: rgb(230, 229, 229);
+    padding: 1rem;
+    border: 3px solid #cccccc;
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
@@ -388,7 +432,7 @@ main {
 
 .btn {
     display: inline-block;
-    background-color: #333;
+    background-color: #1513b3;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -398,7 +442,7 @@ main {
 }
 
 .btn:hover {
-    background-color: #555;
+    background-color: #2b28dd;
     cursor: pointer;
 }
 
@@ -484,7 +528,7 @@ a:active {
     text-align: center;
     margin: 2rem auto;
     background-color: whitesmoke;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem 2rem;
     border-radius: 1rem;
     -webkit-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
     -moz-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
@@ -548,7 +592,7 @@ a:active {
 
 .contact button {
     display: inline-block;
-    background-color: #333;
+    background-color: #1513b3;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -558,7 +602,8 @@ a:active {
 }
 
 .contact button:hover {
-    background-color: #555;
+    background-color: #2b28dd;
+    cursor: pointer;
 }
 
 #bottomMenu {
@@ -603,7 +648,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #fff;
+    background-color: #dfdede;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 20px;
@@ -612,6 +657,10 @@ footer {
     -webkit-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
     -moz-box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
     box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
+}
+
+.popup-container:hover {
+    background-color: rgb(230, 229, 229);
 }
 
 .popup-container.show {
@@ -734,25 +783,42 @@ footer {
     }
 }
 
+.hidden-text {
+    position: absolute;
+    width: 68%;
+    margin-top: 6rem;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #cube-container {
     box-sizing: border-box;
     transform-style: preserve-3d;
-    margin-top: 12rem;
+    position: relative;
+    margin-top: 15rem;
     left: 50%;
     position: relative;
     width: 250px;
     height: 250px;
     transition: 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 #cube-container .face {
     width: 250px;
     height: 250px;
     position: absolute;
-    border: 2px solid #ed3403;
-    background: #ed340370;
-    box-shadow: 0px 0px 150px #ed3403;
+    border: 2px solid blue;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 150px rgba(22, 18, 255, 1);
+    text-align: center;
 }
 
 #cube-container .face.top {
@@ -784,6 +850,20 @@ footer {
 }
 
 #cube-container:hover {
-    transform: rotateX(-25deg) rotateY(-40deg) translate(-50%, -50%);
+    transform: rotateX(-90deg) rotateY(0deg) translate(-50%, -50%);
     transition: 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
+
+.face-title {
+    color: #1513b3;
+}
+
+.face-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 10px;
+    margin-top: 2rem;
+}
+  
