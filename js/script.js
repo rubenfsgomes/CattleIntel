@@ -42,7 +42,6 @@ function topFunction() {
 
 const buttonMore = document.getElementById("more-button");
 var state = 0;
-console.log("in")
 buttonMore.addEventListener("click", function() {
   var more = document.getElementById("more-work");
   
@@ -60,6 +59,22 @@ buttonMore.addEventListener("click", function() {
   }
 });
 
-
+function sendEmail() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+  let finalmessage = `Name : ${name} <br>  Email : ${email} <br>  Message : ${message} <br>`;
+  Email.send({
+      Host : "sandbox.smtp.mailtrap.io",
+      Username : "f6c46e5b213b37",
+      Password : "3484b4544a75bb",
+      To : 'them@website.com',
+      From : "you@isp.com",
+      Subject : "Mail from website",
+      Body : finalmessage
+  }).then(
+    message => alert(message)
+  );
+}
 
 
