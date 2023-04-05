@@ -6,7 +6,7 @@ window.addEventListener("scroll", function() {
       var popup = document.getElementById("popup-container");
       popup.classList.add("show");
     }
-    if ((window.innerHeight + window.pageYOffset) < document.body.offsetHeight-300) {
+    if ((window.innerHeight + window.pageYOffset) < document.body.offsetHeight-370) {
         // Show the pop-up
         var popup = document.getElementById("popup-container");
         popup.classList.remove("show");
@@ -39,3 +39,27 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
+
+const buttonMore = document.getElementById("more-button");
+var state = 0;
+console.log("in")
+buttonMore.addEventListener("click", function() {
+  var more = document.getElementById("more-work");
+  
+  if (state === 0) {
+    more.classList.add("show");
+    
+    buttonMore.classList.remove("fa-circle-chevron-down");
+    buttonMore.classList.add("fa-circle-chevron-up");
+    state = 1;
+  } else {
+    more.classList.remove("show");
+    buttonMore.classList.remove("fa-circle-chevron-up");
+    buttonMore.classList.add("fa-circle-chevron-down");
+    state = 0;
+  }
+});
+
+
+
+

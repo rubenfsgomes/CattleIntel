@@ -40,6 +40,14 @@ body {
     color: blue;
 }
 
+.fa-solid {
+    color: blue;
+}
+
+.fa-solid:hover {
+    color: rgb(36, 36, 247);
+}
+
 .fa-sharp {
     font-size: 22px;
     display: flex;
@@ -53,7 +61,7 @@ body {
     color: blue;
 }
 
-.fa-circle-chevron-up {
+.up-arrow {
     font-size: 22px;
     display: flex;
     justify-content: center;
@@ -63,6 +71,10 @@ body {
     border-radius: 1rem;
     background-color: rgb(223, 222, 222);
     color: blue;
+}
+
+.fa-sharp.fa-solid.fa-circle-chevron-up:hover {
+    cursor: pointer;
 }
 
 .fa-circle-chevron-down:hover {
@@ -393,6 +405,7 @@ main {
 
 .work-title {
     font-weight: normal;
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -640,6 +653,7 @@ footer {
     background-color: #dfdede;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    border: 3px solid #cccccc;
     padding: 20px;
     display: none;
     z-index: 999;
@@ -648,8 +662,16 @@ footer {
     box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
 }
 
+.more-work {
+    display: none;
+}
+
+.more-work.show {
+    display: block;
+}
+
 .popup-container:hover {
-    background-color: rgb(230, 229, 229);
+    background-color: rgb(238, 237, 237);
 }
 
 .popup-container.show {
