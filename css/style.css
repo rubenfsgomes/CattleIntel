@@ -30,12 +30,14 @@ body {
 .left-column {
     float: left;
     width: 75%;
+    animation: fadeIn 1s;
 }
 
 .right-column {
     float: left;
     width: 25%;
     padding-left: 2rem;
+    animation: fadeIn 1s;
 }
 
 .fa-light {
@@ -55,7 +57,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px ;
+    border: 1px;
     padding: 0.5rem;
     border-radius: 1rem;
     border: 3px solid #cccccc;
@@ -68,7 +70,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px ;
+    border: 1px;
     padding: 0.5rem;
     border-radius: 1rem;
     background-color: rgb(223, 222, 222);
@@ -163,7 +165,6 @@ body {
     }
 }
 
-
 html,
 body {
     height: 100%;
@@ -256,7 +257,6 @@ header {
     }
 }
 
-
 header h1 {
     margin-right: 2rem;
     text-decoration: underline;
@@ -329,7 +329,6 @@ main {
         box-shadow: 2px 2px 6px 0px rgba(22, 18, 255, 1);
     }
 }
-
 
 .hero {
     text-align: center;
@@ -404,6 +403,7 @@ main {
 .card h2 {
     margin-bottom: 1rem;
 }
+
 .work-title {
     font-weight: normal;
     font-size: 1.1rem;
@@ -879,8 +879,7 @@ footer {
     font-size: 24px;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     padding: 10px;
     margin-top: 2rem;
 }
-  
