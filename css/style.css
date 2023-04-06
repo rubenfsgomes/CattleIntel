@@ -35,7 +35,6 @@ body {
     float: left;
     width: 25%;
     padding-left: 2rem;
-    animation: fadeIn 1s;
 }
 
 .fa-light {
@@ -790,6 +789,12 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1477px) {
+    #show-team {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     .left-column {
         float: none;
@@ -800,6 +805,25 @@ footer {
         display: none;
     }
 
+    #show-team {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 800px)
+{
+    .purpose img {
+        display: none;
+    }
+
+    .purpose .text {
+        width: 100%;
+    }
+
+    .show-team {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -833,6 +857,7 @@ footer {
         color: #333;
         font-weight: bold;
     }
+
 }
 
 .hidden-text {
