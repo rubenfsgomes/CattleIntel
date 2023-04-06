@@ -874,6 +874,10 @@ footer {
     border-radius: 0;
 }
 
+#cube-text {
+    padding: 1rem;
+}
+
 #cube-container .face.top {
     transform: rotateX(90deg);
     margin-top: -50%;
