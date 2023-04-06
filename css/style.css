@@ -106,7 +106,6 @@ body {
 
 .fa-circle-chevron-down:hover {
     cursor: pointer;
-    background-color: rgb(238, 237, 237);
     transition: 0.3s;
 }
 
