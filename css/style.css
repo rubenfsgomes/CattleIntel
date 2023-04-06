@@ -52,10 +52,6 @@ body {
     font-weight: bold;
 }
 
-.fa-sharp {
-    
-}
-
 .purpose {
     margin: 2rem auto;
     background-color: whitesmoke;
@@ -80,11 +76,9 @@ body {
 
 .purpose img {
     padding: 1rem;
-    display: inline-block;
     float: right;
     width: 400px; /* adjust the width as needed */
 }
-
 
 .up-arrow {
     font-size: 22px;
