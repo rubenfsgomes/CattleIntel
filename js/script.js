@@ -59,6 +59,25 @@ buttonMore.addEventListener("click", function() {
   }
 });
 
+const buttonTeam = document.getElementById("show-team");
+var state = 0;
+buttonTeam.addEventListener("click", function() {
+  var more = document.getElementById("team-img");
+  
+  if (state === 0) {
+    more.classList.add("show");
+    
+    buttonTeam.classList.remove("fa-circle-chevron-down");
+    buttonTeam.classList.add("fa-circle-chevron-up");
+    state = 1;
+  } else {
+    more.classList.remove("show");
+    buttonTeam.classList.remove("fa-circle-chevron-up");
+    buttonTeam.classList.add("fa-circle-chevron-down");
+    state = 0;
+  }
+});
+
 function sendEmail() {
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
