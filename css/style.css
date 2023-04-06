@@ -613,6 +613,8 @@ a:active {
     box-sizing: border-box;
     border: 3px solid #ccc;
     outline: none;
+    resize: none;
+    transition: 0.3s;
 }
 
 .contact input:focus {
